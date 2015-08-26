@@ -1,0 +1,15 @@
+GIT
+  remote: https://github.com/rvandervort/graphem.git
+  revision: a591569e2f44461bf84221295e0cda0d1a42f646
+  specs:
+    graphem (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  graphem!
