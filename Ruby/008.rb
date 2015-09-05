@@ -2,7 +2,7 @@
 # read the file in
 
 # 23514624000
-chars = IO.readlines('008.txt').first.chomp.chars.to_a
+chars = IO.readlines('./input_files/008.txt').first.chomp.chars.to_a
 
 class ProductQueue < Array
   attr_accessor :max_product
