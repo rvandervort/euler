@@ -14,7 +14,7 @@ Find the sum of the digits in the number 100!
 object Euler020 {
   def factorial(num: Int): BigInt = {
 
-    @tailrec 
+    @tailrec
     def factorialAccum(num: Int, accum: BigInt): BigInt =
       if (num == 1) accum else factorialAccum(num - 1, accum * num)
 
@@ -24,6 +24,6 @@ object Euler020 {
   def toDigitArray(value: BigInt): Array[Int] =
     value.toString.toCharArray.map(_.asDigit)
 
-  def run_problem = 
+  def run_problem =
     println(toDigitArray(factorial(100)).sum)
 }
