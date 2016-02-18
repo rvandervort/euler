@@ -7,7 +7,7 @@ package euler {
         if (num % rem.head == 0)
           isSolution(num, rem.tail)
         else
-          false 
+          false
     }
 
     def checkHelper(original: Int, multiplier: Int, list: List[Int]): Int = {
@@ -19,10 +19,10 @@ package euler {
 
     def lcm(l: List[Int]): Int = {
       val max = l.max
-      
+
       val rem = l.diff(List(max))
 
-      return checkHelper(max, 1, rem)  
+      return checkHelper(max, 1, rem)
     }
 
     def run_problem() {
