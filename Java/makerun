@@ -1,0 +1,15 @@
+#! /bin/bash
+
+cwd=$(pwd)
+
+out_dir="$cwd/out"
+
+if [ ! -d $out_dir ]; then
+  mkdir -p $out_dir
+fi
+
+javac -d $out_dir $cwd/Euler$@.java
+
+if [ $? == 0 ]; then
+  (cd $out_dir && java Euler$@)
+fi
